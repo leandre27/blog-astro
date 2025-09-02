@@ -1,11 +1,12 @@
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>mon blog</h1>
-        
-    </body>
-</html>
+---
+import Footer from "../components/Footer.astro"
+import Naviguation from "../components/Naviguation.astro"
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+
+const pageTitle = "blog";
+
+---
+<BaseLayout pageTitle={pageTitle}>
+    <h1>mon blog</h1>
+</BaseLayout>
